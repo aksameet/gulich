@@ -18,14 +18,20 @@
     display: flex;
     flex-wrap: wrap;
 
-    img,
-    .plus {
-        width: 50%;
-    }
-
+    .logo,
     .plus {
         display: flex;
         align-items: flex-start;
+        width: 50%;
+    }
+
+    .logo {
+        img {
+            width: 52px;
+        }
+    }
+
+    .plus {
         > span {
             cursor: pointer;
             display: block;
