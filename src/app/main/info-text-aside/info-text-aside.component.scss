@@ -1,3 +1,52 @@
-@import "variables";
+@import 'variables';
 
-.info-text-aside {}
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 60px);
+    padding: 30px 30px 15px;
+}
+
+.info-text-aside {
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    &.sideRight {
+        .main-text {
+            order: 2;
+        }
+        .side-text {
+            justify-content: flex-start;
+        }
+    }
+
+    .main-text,
+    .side-text {
+        order: 1;
+        span {
+            color: $color-orange;
+        }
+    }
+
+    .main-text {
+        width: 66.6%;
+        text-align: left;
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+
+    .side-text {
+        display: flex;
+        width: 33.3%;
+        justify-content: flex-end;
+        font-size: 20px;
+        & :last-child {
+            align-self: flex-end;
+        }
+    }
+}

@@ -1,0 +1,15 @@
+@import 'variables';
+
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 60px);
+    padding: 30px 30px;
+}
+
+.drum-work {
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 200px;
+}
