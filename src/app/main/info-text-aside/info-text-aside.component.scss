@@ -19,9 +19,15 @@
     &.sideRight {
         .main-text {
             order: 2;
+            ul {
+                text-align: right;
+            }
         }
         .side-text {
             justify-content: flex-start;
+            div {
+                text-align: left;
+            }
         }
     }
 
@@ -38,6 +44,17 @@
         text-align: left;
         font-size: 40px;
         margin-bottom: 40px;
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+            &.bigList {
+                font-size: 28px;
+                columns: 2;
+                height: 300px;
+            }
+        }
     }
 
     .side-text {
@@ -45,8 +62,12 @@
         width: 33.3%;
         justify-content: flex-end;
         font-size: 20px;
-        & :last-child {
-            align-self: flex-end;
+        div {
+            text-align: right;
+        }
+        div > * {
+            display: inline;
+            margin: 0;
         }
     }
 }

@@ -35,6 +35,30 @@ export class MainComponent {
                 'Wir liefern innovatives Design mit aussagekräftigen Marketingkampagnen, welche deine Marke nach vorne katapultierten'
             ],
             sideText: 'Was\nliefern wir',
+            textSideRight: true
+        },
+        {
+            mainText: [
+                'Webdesign',
+                'Webdevelopment',
+                'Corporate Design',
+                'Markenkommunikation',
+                'Creative Direction',
+                'Art Direction',
+                'Printmediendesign',
+                'Konzeption',
+                'Verpackungsdesign',
+                'Marketing',
+                'Produktdesign',
+                'Fotografie',
+                'UI/UX Design',
+                'Storytelling',
+                'Signaletik',
+                'Räumliche Kommunikation',
+                'LP & Cover Musik',
+                'Sound Design'
+            ],
+            sideText: 'Unsere\nLeistungen',
             textSideRight: false
         },
         {

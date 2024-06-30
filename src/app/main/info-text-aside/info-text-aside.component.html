@@ -2,12 +2,23 @@
     class="info-text-aside"
     [ngClass]="{ sideRight: config.textSideRight }"
 >
-    <div class="main-text" *ngFor="let text of config.mainText">
-        {{ text }}<span>.</span>
+    <div class="main-text">
+        <div *ngIf="config.mainText.length > 1">
+            <ul [ngClass]="{ bigList: config.mainText.length > 3 }">
+                <li *ngFor="let text of config.mainText">
+                    {{ text }}<span>.</span>
+                </li>
+            </ul>
+        </div>
+        <div *ngIf="!(config.mainText.length > 1)">
+            {{ config.mainText[0] }}<span>.</span>
+        </div>
     </div>
     <div class="side-text">
-        <span>//</span>
-        <div [innerHTML]="config.sideText.replace('\n', '<br>')"></div>
-        <span>.</span>
+        <div>
+            <span>//</span>
+            <p [innerHTML]="config.sideText.replace('\n', '<br>')"></p>
+            <span>.</span>
+        </div>
     </div>
 </section>
