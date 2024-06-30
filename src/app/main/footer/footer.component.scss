@@ -1,0 +1,43 @@
+@import 'variables';
+
+:host {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% - 60px);
+    background: $color-gray-dark;
+    padding: 30px 30px;
+    color: $color-text-light;
+}
+
+.footer {
+    max-width: 1200px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+
+    > div {
+        width: 25%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+        flex-direction: column;
+        font-size: 22px;
+
+        &:last-child {
+            align-items: flex-end;
+            font-size: 16px;
+            color: white;
+        }
+    }
+
+    .logo {
+        justify-content: space-between;
+        color: $color-orange;
+        font-size: 28px;
+        font-weight: bold;
+        img {
+            width: 40px;
+        }
+    }
+}

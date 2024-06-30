@@ -3,6 +3,7 @@ import { HeroComponent } from './hero/hero.component';
 import { SlideShowComponent } from './slide-show/slide-show.component';
 import { InfoTextAsideComponent } from './info-text-aside/info-text-aside.component';
 import { DrumWorkComponent } from './drum-work/drum-work.component';
+import { FooterComponent } from './footer/footer.component';
 
 export interface SideTexts {
     mainText: string[];
@@ -16,7 +17,8 @@ export interface SideTexts {
         HeroComponent,
         SlideShowComponent,
         InfoTextAsideComponent,
-        DrumWorkComponent
+        DrumWorkComponent,
+        FooterComponent
     ],
     templateUrl: './main.component.html',
     styleUrl: './main.component.scss'

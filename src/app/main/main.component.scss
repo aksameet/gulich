@@ -11,7 +11,7 @@
 .info-text {
     max-width: 1200px;
     width: 100%;
-    margin: 150px 0;
+    margin: 200px 0;
     p {
         text-align: justify;
         word-break: break-all;
@@ -21,4 +21,13 @@
             color: $color-orange;
         }
     }
+}
+
+.big-plus {
+    color: $color-orange;
+    font-size: 250px;
+    font-weight: bold;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 50px;
 }
