@@ -1,0 +1,16 @@
+@import 'variables';
+
+@font-face {
+    font-family: 'Helvetica Neue';
+    src: url('/assets/fonts/HelveticaNeue.ttc') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    color: $color-text;
+}
